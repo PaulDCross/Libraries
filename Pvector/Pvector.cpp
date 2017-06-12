@@ -108,6 +108,12 @@ void Pvector::normalise() {
 		set(x, y);
 }
 
+float Pvector::getAngle() const {
+	float a = atan2(x, y);
+	a = a*(a >= 0) + (a + 2 * M_PI)*(a < 0);
+	return a;
+}
+
 
 // Creates and returns a copy of the Pvector used as a parameter
 Pvector Pvector::copy(Pvector v) {

@@ -49,6 +49,7 @@ public:
 	float magnitude() const;
 	float angleBetween(Pvector) const;
 	void normalise();
+	float getAngle() const;
 
 	static Pvector copy(Pvector);
 };
