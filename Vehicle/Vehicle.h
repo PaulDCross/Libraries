@@ -17,11 +17,11 @@ public:
 	~Vehicle();
 
 	// 
-	update();
-	applyForce();
-	seek();
-	avoid();
-	applyWalls();
+	void update();
+	void applyForce(Pvector);
+	void seek(Pvector);
+	void avoid(Pvector);
+	void applyWalls();
 
 
 };
